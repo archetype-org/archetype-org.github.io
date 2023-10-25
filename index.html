@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>Archetype</title>
+        <link type="font" href="https://fonts.googleapis.com/css?family=Space+Grotesk" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+        <script>
+            function copy() {
+              var group = document.getElementById("urbit");
+              group.focus();
+              navigator.clipboard.writeText('~doplyr-harbur/archetype')
+                .then(() => { alert('Copied group name to clipboard'); })
+                .catch((error) => { alert(`Copy failed! ${error}`); });
+            }
+        </script>
+
+        <!--
+        <link href="favicon.ico" rel="icon" />
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        -->
+    </head>
+    <body>
+        <div class="header">
+            <!--<div class="logo">Archetype</div> -->
+            <div class="links">
+                <span class="urbit">
+                    <i>
+                        <a id="urbit" onclick="copy()" value="~doplyr-harbur/archetype">~urbit</a>
+                    </i>
+                </span>
+                <span class="email">
+                    <i>
+                        <a href="mailto:archetype@archetype.computer">email</a>
+                    </i>
+                </span>
+                <span class="whitepaper">
+                    <i>
+                        <a href="">whitepaper</a>
+                    </i>
+                </span>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="content">
+                <h1>Archetype</h1>
+                <p class="description">Securing the software supply chain for web3</p>
+            </div>
+        </div>
+    </body>
+</html>

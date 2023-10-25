@@ -1,0 +1,59 @@
+body {
+    animation-name: drift;
+    animation-duration: 1.25s;
+    background: rgb(255,246,246);
+    background: linear-gradient(139deg, rgb(233 224 224) 37%, rgb(158 170 184) 81%);
+    font-family: 'Space Mono', monospace;
+    font-style: oblique;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 4em;
+    transform: rotate(0deg) skew(-5deg, 0);
+}
+
+.header {
+    display:block;
+}
+
+.logo {
+    display: block;
+    float: left;
+}
+
+.links {
+    display: block;
+    float: right;
+    padding: 0.5em;
+}
+
+.links span {
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 1.05em;
+    padding: 0.6em;
+}
+
+.links a {
+    color: darkslateblue;
+    cursor:pointer;
+}
+
+.wrapper {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes drift {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+}
