@@ -5,6 +5,7 @@ body {
     background: linear-gradient(139deg, rgb(233 224 224) 37%, rgb(158 170 184) 81%);
     font-family: 'Space Mono', monospace;
     font-style: oblique;
+    overflow: hidden;
 }
 
 h1 {
@@ -14,6 +15,8 @@ h1 {
 }
 
 .header {
+    position: relative;
+    z-index: 2;
     display:block;
 }
 
@@ -25,7 +28,7 @@ h1 {
 .links {
     display: block;
     float: right;
-    padding: 0.5em;
+    padding: 1.5em;
 }
 
 .links span {
@@ -44,6 +47,7 @@ h1 {
     display: table;
     width: 100vw;
     height: 100vh;
+    position: fixed;
 }
 
 @keyframes drift {
