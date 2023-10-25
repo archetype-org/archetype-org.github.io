@@ -61,3 +61,14 @@ h1 {
     margin: 0 auto;
     text-align: center;
 }
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        font-size: 2em;
+    }
+
+    .links {
+        font-size: 1em;
+        padding: 1em;
+    }
+}
