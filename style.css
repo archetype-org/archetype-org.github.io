@@ -62,6 +62,26 @@ h1 {
     text-align: center;
 }
 
+.description {
+    display:inline-block;
+    overflow:hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-right: .15em solid darkslateblue;
+    animation: typing 2.5s steps(50, end), blink .75s step-end infinite;
+    padding-right: 0.3em;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 25% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: darkslateblue; }
+}
+
 @media only screen and (max-device-width: 480px) {
     body {
         font-size: 2em;
@@ -70,5 +90,10 @@ h1 {
     .links {
         font-size: 1em;
         padding: 1em;
+    }
+
+    .description {
+        animation: none;
+        border-right: none;
     }
 }
